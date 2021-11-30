@@ -54,6 +54,7 @@ section{
 #accueil{
     position: relative;
     display: flex;
+    border: 1px solid blue;
 }
 
 #accueil img{
@@ -76,12 +77,57 @@ h4{
 .link-bar{
     position: absolute;
     bottom: 0;
-    left: 0;
-    transform : translate(50%, 50%);
+    left: 5rem;
+    transform : translateY(50%);
     background-image: url('./images/bg-shorten-desktop.svg');
     background-size: cover;
     background-position: center;
-    padding: 2rem;
-    border: 1px solid red;
-    
+    padding: 2rem 3rem;
+    background-color: hsl(260, 8%, 14%);
+    width: 87%;
+    border-radius: 10px;
+}
+
+.link-bar input{
+    width: 80%;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    font-family: inherit;
+    margin-right: 15px;
+}
+
+.link-bar button{
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    font-family: inherit;
+}
+#statistics{
+    min-height: 100vh;
+    background: rgb(228, 227, 227);
+}
+#statistics h3{
+    margin: 4rem auto 0.5rem;
+    font-size: 32px;
+    text-align: center;
+}
+.track {
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    font-weight: 500;
+}
+.container-box{
+    display: flex;
+   
+}
+.box{
+    background: white;
+}
+.box:not(last-child){
+    margin-right: 20px;
+    padding: 3rem 1rem 1rem;
+}
+.box p{
+    color: hsl(257, 7%, 63%);
 }
