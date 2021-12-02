@@ -77,19 +77,23 @@ h4{
 .link-bar{
     position: absolute;
     bottom: 0;
-    left: 5rem;
+    left: 0;
+    right:0;
+    margin-left: 5rem;
+    margin-right: 5rem;
     transform : translateY(50%);
     background-image: url('./images/bg-shorten-desktop.svg');
     background-size: cover;
     background-position: center;
-    padding: 2rem 3rem;
+    padding: 2rem 5rem;
     background-color: hsl(260, 8%, 14%);
-    width: 87%;
     border-radius: 10px;
+    
+    
 }
 
 .link-bar input{
-    width: 80%;
+    width: 40vw;
     padding: 0.5rem 1rem;
     border-radius: 3px;
     border: none;
