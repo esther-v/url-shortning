@@ -123,15 +123,59 @@ h4{
 }
 .container-box{
     display: flex;
-   
+    margin-top: 60px;
 }
 .box{
     background: white;
+    position: relative;
+    padding: 4rem 1.5rem 1.5rem;
+    height: 35vh;
 }
 .box:not(last-child){
     margin-right: 20px;
-    padding: 3rem 1rem 1rem;
+    
+}
+.b2{
+    margin-top: 30px;
+}
+.b3{
+    margin-top: 60px;
 }
 .box p{
     color: hsl(257, 7%, 63%);
+    font-size: 15px;
 }
+.box h4{
+    color: hsl(260, 8%, 14%);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.box img{
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: translate(50%, -50%);
+    background-color: hsl(260, 8%, 14%);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#boost{
+    height: 20vh;
+    background-image: url('./images/bg-shorten-desktop.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 5rem;
+    background-color: hsl(260, 8%, 14%);
+}
+#boost h2{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+#boost a {
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+}
+
