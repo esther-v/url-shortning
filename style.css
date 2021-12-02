@@ -32,6 +32,7 @@ nav a {
     margin-left: 20px;
     color: hsl(257, 7%, 63%);
     font-weight: bolder;
+    font-size: 15px;
 }
 
 a{
@@ -43,8 +44,10 @@ a{
     color: white;
     padding: 0.4rem 1rem;
     border-radius: 25px;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: inherit;
 }
+
 
 section{
     height: 60vh;
@@ -54,7 +57,6 @@ section{
 #accueil{
     position: relative;
     display: flex;
-    border: 1px solid blue;
 }
 
 #accueil img{
@@ -69,9 +71,10 @@ h2{
     line-height: 4rem;
 }
 
-h4{
+.text-pres h4{
     color: hsl(257, 7%, 63%);
     font-weight: 500;
+    margin-bottom: 30px;
 }
 
 .link-bar{
@@ -85,15 +88,15 @@ h4{
     background-image: url('./images/bg-shorten-desktop.svg');
     background-size: cover;
     background-position: center;
-    padding: 2rem 5rem;
-    background-color: hsl(260, 8%, 14%);
+    padding: 2rem 3rem;
+    background-color: hsl(257, 27%, 26%);
     border-radius: 10px;
-    
+    display: flex;
     
 }
 
 .link-bar input{
-    width: 40vw;
+    width: 80%;
     padding: 0.5rem 1rem;
     border-radius: 3px;
     border: none;
@@ -106,10 +109,12 @@ h4{
     padding: 0.5rem 1rem;
     border-radius: 3px;
     font-family: inherit;
+   
 }
 #statistics{
-    min-height: 100vh;
+    height: auto;
     background: rgb(228, 227, 227);
+    padding-bottom: 50px;
 }
 #statistics h3{
     margin: 4rem auto 0.5rem;
@@ -129,7 +134,7 @@ h4{
     background: white;
     position: relative;
     padding: 4rem 1.5rem 1.5rem;
-    height: 35vh;
+    height: 25vh;
 }
 .box:not(last-child){
     margin-right: 20px;
@@ -143,7 +148,7 @@ h4{
 }
 .box p{
     color: hsl(257, 7%, 63%);
-    font-size: 15px;
+    font-size: 13px;
 }
 .box h4{
     color: hsl(260, 8%, 14%);
@@ -166,7 +171,7 @@ h4{
     background-size: cover;
     background-position: center;
     padding: 2rem 5rem;
-    background-color: hsl(260, 8%, 14%);
+    background-color: hsl(257, 27%, 26%);
 }
 #boost h2{
     color: white;
@@ -179,3 +184,22 @@ h4{
     width: 130px;
 }
 
+footer{
+    height: 30vh;
+    padding: 2rem 5rem;
+    display: flex;
+    background: hsl(260, 8%, 14%);
+    color: white;
+    justify-content: space-between;
+}
+footer img{
+    height: 30px;
+    color: white;
+}
+.attribution{
+    margin-top: -30px;
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { color: hsl(180, 66%, 49%); }
