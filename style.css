@@ -114,6 +114,11 @@ form{
     font-family: inherit;
    
 }
+
+#links{
+    margin-top: 50px;
+    border: 1px solid red;
+}
 #statistics{
     height: auto;
     background: rgb(228, 227, 227);
