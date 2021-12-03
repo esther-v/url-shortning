@@ -140,14 +140,18 @@ form{
     background: white;
     position: relative;
     padding: 4rem 1.5rem 1.5rem;
-    height: 25vh;
+    height: auto;
 }
 .box:not(last-child){
     margin-right: 20px;
     
 }
+.b1{
+    margin-bottom: 60px;
+}
 .b2{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .b3{
     margin-top: 60px;
