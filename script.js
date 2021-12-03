@@ -3,6 +3,7 @@ const base_url = "https://api.shrtco.de/v2/shorten?url="
 const search = document.querySelector('#search')
 const form = document.querySelector('form')
 const divLinks = document.querySelector('#links')
+const linkBar = document.querySelector('.link-bar')
 
 
 form.addEventListener('submit', (e) => {
@@ -61,11 +62,20 @@ async function getURLDetails (inputValue) {
             copyText.select()
             document.execCommand('copy')
             copyText.remove()
-            
+
             copyBtn.textContent = 'Copied!'
             copyBtn.style.backgroundColor = 'hsl(257, 27%, 26%)'
         })
 
+    }
+
+    else if(result.ok === false) {
+        console.log('error')
+        let error = document.createElement('p')
+        error.textContent = 'Please add a link'
+        error.style.fontSize = '12px'
+        error.style.color = 'hsl(0, 87%, 67%)'
+        linkBar.append(error)
     }
 }
 
