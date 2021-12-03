@@ -4,6 +4,7 @@ const search = document.querySelector('#search')
 const form = document.querySelector('form')
 const divLinks = document.querySelector('#links')
 const linkBar = document.querySelector('.link-bar')
+const error = document.querySelector('.error')
 
 
 form.addEventListener('submit', (e) => {
@@ -22,6 +23,8 @@ async function getURLDetails (inputValue) {
     console.log(result)
     console.log('ok')
     if(result.ok === true) {
+        error.style.display = 'none'
+        search.value = ''
         //create the div with the result short link
         let resultLink = document.createElement('div')
         divLinks.append(resultLink)
@@ -71,12 +74,8 @@ async function getURLDetails (inputValue) {
 
     else if(result.ok === false) {
         console.log('error')
-        let error = document.createElement('p')
-        error.textContent = 'Please add a link'
+        error.style.display = 'block'
         error.style.fontSize = '12px'
         error.style.color = 'hsl(0, 87%, 67%)'
-        linkBar.append(error)
     }
 }
-
-

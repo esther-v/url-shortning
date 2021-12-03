@@ -116,7 +116,6 @@ form{
 
 #links{
     margin-top: 50px;
-    border: 1px solid red;
 }
 #statistics{
     height: auto;
@@ -210,3 +209,7 @@ footer img{
     color: white;
 }
 .attribution a { color: hsl(180, 66%, 49%); }
+
+.error{
+    display: none;
+}
